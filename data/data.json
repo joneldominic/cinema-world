@@ -1,0 +1,28 @@
+{
+    "movies" : [
+        {
+            "id": "1",
+            "title": "Jowable",
+            "synopsis": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores labore commodi laudantium! Corrupti deserunt iste, consequatur vel laudantium totam fugit.",
+            "showDate": "Oct 14, 2019",
+            "duration": "1hr 50mins",
+            "rating": "4",
+            "ticketPrice": "500",
+            "contentRating": "G",
+            "imgUrl": "assets/images/movies/jowable.jpg"
+        },
+    
+        {
+            "id": "2",
+            "title": "Movie 2",
+            "synopsis": "Lasfafasfasfafst amet consectetur, adipisicing elit. Dolores labore commodi laudantium! Corrupti deserunt iste, consequatur vel laudantium totam fugit.",
+            "showDate": "Oct 16, 2019",
+            "duration": "2hr 50mins",
+            "rating": "1",
+            "ticketPrice": "200",
+            "contentRating": "PG",
+            "imgUrl": "assets/images/movies/Edward.jpg"
+        }
+    ]
+}
+

@@ -1,0 +1,142 @@
+body {
+    background-color: #020d18;
+
+}
+
+#content-section-a {
+    height: 20vh;
+    background-color: #0C2238;
+}
+
+#content-section-b {
+    background-color: #0C2238;
+}
+
+#seats-legend-cntr .inner-sl-cntr .seat-legend{
+    width: 30px;
+    height: 30px;
+}
+
+
+#seats-legend-cntr .inner-sl-cntr .seat-legend:not(:last-child){
+    margin-right: 10px;
+}
+
+#seats-legend-cntr .inner-sl-cntr {
+    border: 2px solid #020d18;
+    width: 350px;
+    border-radius: 7px;
+}
+
+#seats-cntr img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Shake Hover Effect */
+#seats-cntr img.available:hover{
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+/* Shake Hover Effect */
+
+
+#seats-cntr .seat-row {
+    font-weight: 600;
+
+}
+
+#seats-cntr .top-label {
+    width: 50px; 
+    height: 30px; 
+    display: inline-block;
+}
+
+#movie-screen {
+    border: 3px solid #01070e;
+    border-radius: 3px 3px 30px 30px;
+
+    background: #0C2238;
+    width: 60%;
+}
+
+@media only screen and (max-width: 991px) {
+    #movie-screen {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #seats-cntr img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #seats-cntr .top-label {
+        width: 22px; 
+        height: 20px; 
+    }
+
+    #seats-cntr .label {
+        margin-left: .5rem !important;
+        margin-right: .5rem !important;
+
+    }
+
+    #seats-row-i .label {
+        margin-left: .7rem !important;
+        margin-right: .7rem !important;
+    }
+}
+
+@media only screen and (max-width: 456px) {
+    #seats-cntr img {
+        width: 40px;
+        height: 40px;
+    }
+
+    #seats-cntr .top-label {
+        width: 28px; 
+        height: 20px; 
+    }
+
+    #seats-cntr .label {
+        margin-left: .3rem !important;
+        margin-right: .3rem !important;
+
+    }
+
+    #seats-row-i .label {
+        margin-left: .5rem !important;
+        margin-right: .5rem !important;
+    }
+}
+
+@media only screen and (max-width: 449px) {
+
+    #seats-cntr .scrollable {
+        width:449px;
+        overflow-y: scroll;
+        white-space: nowrap;
+    }
+}
+
+
+#selected-seat-badge {
+    background: #DD003F;
+    padding: 4px;
+}

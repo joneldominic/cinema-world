@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Cinema World | Seat Plan</title>
+        <meta name="description" content="Third Step of Movie Reservation">
+        <link rel="icon" href="assets/icons/logo-b.png" type="image/x-icon">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        
+        <!-- User Defined CSS -->
+        <link rel="stylesheet" href="assets/styles/helper.css">
+        <link rel="stylesheet" href="assets/styles/seatplan.css">
+
+        <!-- Font Awesome -->
+        <script defer src="assets/fonts/fontawesome.js"></script>    
+
+        
+    </head>
+    <body>
+
+        <!-- Social Media Section -->
+        <section id="social-media-section">
+            <div class="social-media-container py-2 container">
+                <div class="row justify-content-end">
+                    <a href="javascript:void(0)"><i class="fab fa-twitter mx-1"></i></a>
+                    <a href="javascript:void(0)"><i class="fab fa-facebook-f mx-1"></i></a>
+                    <a href="javascript:void(0)"><i class="fab fa-google-plus-g ml-1 mr-4"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Social Media Section -->
+
+        <!-- Navigation bar -->
+        <section id="nav-section" class="py-1 bg-020d18">  
+            <nav class="main-nav navbar navbar-expand-lg navbar-dark bg-020d18">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"> <img src="assets/icons/logo-a.png" alt="Cinema World Logo" style="height:60px;"></a>
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                            
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+                        <ul class="navbar-nav mt-2 mt-lg-0">
+                            
+                            <li class="nav-item px-md-2">
+                                <a class="nav-link" href="index.html">HOME</a>
+                            </li>
+                            
+                            <li class="nav-item px-md-2 active">
+                                <a class="nav-link" href="reservation.html">RESERVATION</a>
+                            </li>
+
+                            <li class="nav-item dropdown px-md-2">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MY ACCOUNT</a>
+                                <div class="bg-rgb9-25-43 dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-profile">
+                                    <a class="dropdown-item" href="#">PROFILE</a>
+                                    <a class="dropdown-item" href="reservation-history.html">RESERVATION HISTORY</a>
+                                    <a class="dropdown-item" href="#">LOGOUT</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- Navigation bar -->
+
+        <!-- Content Section A-->
+        <section id="content-section-a">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div id="pbar" class="pbar-container mt-lg-4">
+                            <ul class="progressbar">
+                                <li class="active">Select Movie</li>
+                                <li class="active">Input Details</li>
+                                <li class="current-step">Choose Seat</li>
+                                <li>Confirm</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Content Section A-->
+
+        <!-- Content Section B-->
+        <section id="content-section-b">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10">
+
+                        <div id="cinema-seatplan" class="card bg-rgb9-25-43 text-abb7c4 mb-5">
+                            <div class="card-header text-center">
+                                <h4>Seat Plan</h4> 
+                            </div>
+                            <div class="card-body">                                  
+                                
+                                <div id="seats-cntr" class="row justify-content-center">
+
+                                    <div class="scrollable">
+
+                                        <div class="col">
+                                            <div id="seats-legend-cntr">
+                                                <div class="inner-sl-cntr text-center mx-auto m-3 p-1">
+                                                    <span>Available </span><img class="seat-legend" title="Available" src="assets/images/seats/available.png" alt="Available Seat Legend">
+                                                    <span>Taken </span><img class="seat-legend" title="Taken" src="assets/images/seats/taken.png" alt="Taken Seat Legend">
+                                                    <span>Selected </span><img class="seat-legend" title="Selected" src="assets/images/seats/selected.png" alt="Selected Seat Legend">
+                                                </div>
+                                            </div>
+
+                                            <div id="seats-row-label" class="seat-row mx-auto text-center">
+                                                <span class="label top-label">1</span>
+                                                <span class="label top-label">2</span>
+                                                <span class="label top-label">3</span>
+                                                <span class="label top-label">4</span>
+                                                <span class="label top-label"> </span>
+                                                <span class="label top-label">5</span>
+                                                <span class="label top-label">6</span>
+                                                <span class="label top-label">7</span>
+                                                <span class="label top-label">8</span>
+                                            </div>
+                                            <div id="seats-row-i" class="seat-row mx-auto text-center">
+                                                <img class="seat " title="I1" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="I2" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="I3" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="I4" src="assets/images/seats/available.png" alt="Seat">
+                                                <span class="label mx-4">I</span>
+                                                <img class="seat available" title="I5" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="I6" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="I7" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="I8" src="assets/images/seats/available.png" alt="Seat">
+                                            </div>
+                                            <div id="seats-row-h" class="seat-row mx-auto text-center">
+                                                <img class="seat available" title="G1" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="G2" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="G3" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="G4" src="assets/images/seats/available.png" alt="Seat">
+                                                <span class="label mx-4">H</span>
+                                                <img class="seat available" title="H5" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="H6" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="H7" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="H8" src="assets/images/seats/available.png" alt="Seat">
+                                            </div>
+                                            <div id="seats-row-g" class="seat-row mx-auto text-center">
+                                                <img class="seat available" title="G1" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="G2" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="G3" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="G4" src="assets/images/seats/available.png" alt="Seat">
+                                                <span class="label mx-4">G</span>
+                                                <img class="seat available" title="G5" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="G6" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="G7" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="G8" src="assets/images/seats/available.png" alt="Seat">
+                                            </div>
+                                            <div id="seats-row-f" class="seat-row mx-auto text-center">
+                                                <img class="seat available" title="F1" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="F2" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="F3" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="F4" src="assets/images/seats/available.png" alt="Seat">
+                                                <span class="label mx-4">F</span>
+                                                <img class="seat available" title="F5" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="F6" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="F7" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="F8" src="assets/images/seats/available.png" alt="Seat">
+                                            </div>
+                                            <div id="seats-row-e" class="seat-row mx-auto text-center">
+                                                <img class="seat available" title="E1" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="E2" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="E3" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="E4" src="assets/images/seats/available.png" alt="Seat">
+                                                <span class="label mx-4">E</span>
+                                                <img class="seat available" title="E5" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="E6" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="E7" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="E8" src="assets/images/seats/available.png" alt="Seat">
+                                            </div>
+                                            <div id="seats-row-d" class="seat-row mx-auto text-center">
+                                                <img class="seat available" title="D1" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="D2" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="D3" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="D4" src="assets/images/seats/available.png" alt="Seat">
+                                                <span class="label mx-4">D</span>
+                                                <img class="seat available" title="D5" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="D6" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="D7" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="D8" src="assets/images/seats/available.png" alt="Seat">
+                                            </div>
+                                            <div id="seats-row-c" class="seat-row mx-auto text-center">
+                                                <img class="seat available" title="C1" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="C2" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="C3" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="C4" src="assets/images/seats/available.png" alt="Seat">
+                                                <span class="label mx-4">C</span>
+                                                <img class="seat available" title="C5" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="C6" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="C7" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="C8" src="assets/images/seats/available.png" alt="Seat">
+                                            </div>
+                                            <div id="seats-row-b" class="seat-row mx-auto text-center">
+                                                <img class="seat available" title="B1" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="B2" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="B3" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="B4" src="assets/images/seats/available.png" alt="Seat">
+                                                <span class="label mx-4">B</span>
+                                                <img class="seat available" title="B5" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="B6" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="B7" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="B8" src="assets/images/seats/available.png" alt="Seat">
+                                            </div>
+                                            <div id="seats-row-a" class="seat-row mx-auto text-center">
+                                                <img class="seat available" title="A1" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="A2" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="A3" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="A4" src="assets/images/seats/available.png" alt="Seat">
+                                                <span class="label mx-4">A</span>
+                                                <img class="seat available" title="A5" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="A6" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="A7" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat available" title="A8" src="assets/images/seats/available.png" alt="Seat">
+                                            </div>
+                                            <div id="movie-screen-cntr" class="mt-4 mx-auto text-center">
+                                                <div id="movie-screen" class="mx-auto">Movie Screen</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-footer card-seatplan">
+                                <div class="row justify-content-between px-md-5 px-0">
+                                    <a href="movie-selected.html" class="btn btn-link btn-sm ml-3 ml-lg-0"><i class="fas fa-chevron-left"></i> Back</a>
+                                    <div id="resrvation-details">
+                                        Movie Title | Cinema # | Show Date | Reserved Seats <span id="selected-seat-badge" class="badge">0</span>
+                                    </div>
+                                    <a href="confirmation.html" class="btn btn-link btn-sm ml-3 ml-lg-0">Proceed <i class="fas fa-chevron-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Content Section B-->
+
+        <!-- Footer -->
+        <section id="footer-section">
+            <footer >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-4 py-lg-4 mt-5 mt-md-2 px-5 ml-3 ml-lg-0">
+                            <div class="row">
+                                <img src="assets/icons/logo-a.png" style="height: 50px" alt="Brand Logo">
+                            </div>
+                            <div class="row">
+                                <address class="text-abb7c4 pt-3">
+                                    <span>Cebu IT Park Business Center</span> <br>
+                                    <span>S-04 G/F Skyrise 4 Bldg.</span> <br>
+                                    <span>Cebu IT Park Lahug, Cebu City 6000</span>
+                                </address>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4 py-lg-4 mt-5 mt-md-2 px-5 text-abb7c4">
+                            <h5 class="mb-4"><strong>Legal</strong></h5>
+                            <ul class="footer-links-cntr">
+                                <li><a href="javascript:void(0)">Terms and Condition</a></li>
+                                <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                                <li><a href="javascript:void(0)">Security</a></li>
+
+
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 col-lg-4 py-lg-4 mt-5 mt-md-2 px-5 text-abb7c4 footer-sm-icon">
+                            <a href="javascript:void(0)"><i class="fab fa-facebook-f fa-2x mr-3"></i></a>
+                            <a href="javascript:void(0)"><i class="fab fa-twitter fa-2x mx-3"></i></a>
+                            <a href="javascript:void(0)"><i class="fab fa-google-plus-g fa-2x mx-3"></i></a>
+
+                            <div class="footer-email-box mt-4">
+                                <input type="text" class="email-box__input mb-2" placeholder="Email Address" />
+                                <a href="javascript:void(0)" class="email-box__button"><i class="far fa-paper-plane"></i></a>
+                                <p>SUBSCRIBE NOW</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy-right-cntr bg-0f1c27">
+                    <div class="container">
+                        <div class="row justify-content-center py-3 text-abb7c4">
+                            <small>Copyright &copy; Cejudo and Tapang  </small>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+        <!-- Footer -->
+
+        <!-- Scripts -->
+        <script src="assets/scripts/jquery-3.3.1.min.js"></script>
+        <script src="assets/bootstrap/js/popper.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+
+        <!-- User Defined JS -->
+        <script src="assets/scripts/helper.js"></script>
+
+        <!-- Scripts -->
+
+    </body>
+</html>

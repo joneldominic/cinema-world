@@ -1,0 +1,35 @@
+body {
+    background-color: #020d18;
+
+}
+
+#content-section-a {
+    height: 20vh;
+    background-color: #0C2238;
+}
+
+#content-section-b {
+    background-color: #0C2238;
+}
+
+#movie-detail-container .content-rating-detail {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+#movie-detail-container .movie-banner-img img {
+    width: 70%;
+}
+
+#schedule-date-cntr #schedule-date-picker,
+#cinema-selector-cntr #input-cinema{
+    background-color:#233A50;
+    color: #abb7c4;
+}
+
+/* #schedule-date-cntr .input-group-prepend {
+    background-color:#233A50 !important;
+    color: #abb7c4 !important;
+} */
+

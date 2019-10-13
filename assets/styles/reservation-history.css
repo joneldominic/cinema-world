@@ -1,0 +1,31 @@
+body {
+    background-color: #020d18;
+
+}
+
+#content-section-a {
+    height: 5vh;
+    background-color: #0C2238;
+}
+
+#content-section-b {
+    min-height: 45vh;
+    background-color: #0C2238;
+}
+
+
+#reservation-history-cntr #reservation-history-table>tbody>tr>td {
+    vertical-align: middle;
+    border-bottom: 1px solid #abb7c4;
+
+}
+
+#reservation-history-cntr #reservation-history-table>thead>tr>th{
+    border-top: 2px solid #abb7c4;
+    border-bottom: 2px solid #abb7c4;
+}
+
+#reservation-history-table .table-history-head tr th{
+    color: #abb7c4;
+}
+
