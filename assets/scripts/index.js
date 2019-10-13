@@ -30,8 +30,7 @@ $(window).resize(function() {
 
 // Content Initialization
 $(document).ready(function(){
-
-    populateShowingMovieCards();
+    populateMovieCards();
 }); 
 // Content Initialization
 
@@ -75,18 +74,19 @@ $(".showing-details-modal-btn").click(function(){
 
 
 });
-
-
 // Events Assignment
 
 
 
 
 
-function populateShowingMovieCards() {
+function populateMovieCards() {
     var showing = Array(4);
+    var comingsoon = Array();
 
+    var isShowing = false;
     movies.forEach(function(movie, m_index) {
+        isShowing = false;
         movie.show.forEach(function(show, s_index){
             if(show.date === getDateToday()) {
                 switch(show.cinema) {
@@ -110,9 +110,16 @@ function populateShowingMovieCards() {
                             showing[3] = movie;
                         } 
                         break;
+                    default: //...
                 }
+                
+                isShowing = true;
             }
         })
+
+        if(!isShowing) {
+            comingsoon.push(movie);
+        }
     })
 
     setShowingMovieCard(showing[0], 1);
@@ -124,6 +131,14 @@ function populateShowingMovieCards() {
     $("#content-nowshowing").show();
     // Removes Content Filler
     $("#content-section").css("height", "auto");
+
+
+
+    // Temp
+    $("#content-comingsoon").show();
+    // Try implementing coming soon in another method
+    console.log(comingsoon);
+
 }
 
 

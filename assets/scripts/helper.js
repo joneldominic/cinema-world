@@ -49,7 +49,7 @@ function getDateToday() {
 movies.forEach(function(movie, m_index) {
 	movie.show.forEach(function(show, s_index){
 		if(show.date == getDateToday()) {
-			console.log(movie.title + " - " + show.date + " - " + show.cinema)
+			console.log(movie.id + "-" +movie.title + " - " + show.date + " - " + show.cinema)
         }
 	})
 })
