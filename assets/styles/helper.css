@@ -171,8 +171,12 @@
 /* Footer Section */
 
 /* Rating Style */
-.rating .checked {
+.rating svg{
+    margin-right: 3px;
+}
+.rating .checked{
     color: orange;
+    margin-right: 3px;
 }
 /* Rating Style */
 

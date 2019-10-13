@@ -76,3 +76,21 @@ body {
                 0px 18px 23px rgba(0,0,0,0.1);
 }
 
+
+
+
+
+
+
+
+
+/* Hides Content Before Fetching Data */
+#content-nowshowing, #content-comingsoon {
+    display: none;
+}
+
+/* Temp Content Filler */
+#content-section {
+    height: 100vh;
+}
+/* Hide Content Before Fetching Data */
