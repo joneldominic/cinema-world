@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Cinema World</title>
+        <meta name="description" content="A fictitious  moviehouse. Telling your Story with Videos.">
+        <link rel="icon" href="assets/icons/logo-b.png" type="image/x-icon">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+
+        <!-- User Defined CSS -->
+        <link rel="stylesheet" href="assets/styles/helper.css">
+        <link rel="stylesheet" href="assets/styles/index.css">
+
+        <!-- Font Awesome -->
+        <script defer src="assets/fonts/fontawesome.js"></script>    
+
+        <!-- Data -->
+        <script src="data/movies.js"></script>
+
+    </head>
+    <body>
+        
+        <!-- Social Media Section -->
+        <section id="social-media-section">
+            <div class="social-media-container py-2 container">
+                <div class="row justify-content-end">
+                    <a href="javascript:void(0)"><i class="fab fa-twitter mx-1"></i></a>
+                    <a href="javascript:void(0)"><i class="fab fa-facebook-f mx-1"></i></a>
+                    <a href="javascript:void(0)"><i class="fab fa-google-plus-g ml-1 mr-4"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Social Media Section -->
+
+        <!-- Navigation bar -->
+        <section id="nav-section" class="py-1 bg-020d18">  
+            <nav class="main-nav navbar navbar-expand-lg navbar-dark bg-020d18">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"> <img src="assets/icons/logo-a.png" alt="Cinema World Logo" style="height:60px;"></a>
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                            
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+                        <ul class="navbar-nav mt-2 mt-lg-0">
+                            
+                            <li class="nav-item px-md-2 active">
+                                <a class="nav-link" href="index.html">HOME</a>
+                            </li>
+                            
+                            <li class="nav-item px-md-2">
+                                <a class="nav-link" href="reservation.html">RESERVATION</a>
+                            </li>
+
+                            <li class="nav-item dropdown px-md-2">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-profile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">MY ACCOUNT</a>
+                                <div class="bg-rgb9-25-43 dropdown-menu dropdown-menu-right dropdown-info" aria-labelledby="navbarDropdownMenuLink-profile">
+                                    <a class="dropdown-item" href="#">PROFILE</a>
+                                    <a class="dropdown-item" href="reservation-history.html">RESERVATION HISTORY</a>
+                                    <a class="dropdown-item" href="#">LOGOUT</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- Navigation bar -->
+
+        <!-- Landing Section -->
+        <section id="landing-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="landing-content mt-5 ">
+
+                        <div id="landing-carousel" class="carousel slide" data-ride="carousel">
+
+                            <!-- Indicators -->
+                            <ul class="carousel-indicators">
+                                <li data-target="#landing-carousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#landing-carousel" data-slide-to="1"></li>
+                                <li data-target="#landing-carousel" data-slide-to="2"></li>
+                                <li data-target="#landing-carousel" data-slide-to="3"></li>
+                                <li data-target="#landing-carousel" data-slide-to="4"></li>
+                                <li data-target="#landing-carousel" data-slide-to="5"></li>
+                            </ul>
+                                
+                            <!-- The slideshow -->
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="carousel-inner-cnt d-flex flex-wrap justify-content-center">
+                                        <img src="assets/images/carousel/avengers.jpg" alt="Avengers">
+                                        <div class="carousel-movie-detail">
+                                            <div class="bottom-left title">THE AVENGERS</div>
+                                            <div class="bottom-left tagline">Most assembly required a leader.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-inner-cnt d-flex flex-wrap justify-content-center ">
+                                        <img src="assets/images/carousel/ironman.jpg" alt="Aquaman">
+                                        <div class="carousel-movie-detail">
+                                            <div class="bottom-left title">IRON MAN 2</div>
+                                            <div class="bottom-left tagline">It's not the armor that makes the hero, but the man inside.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-inner-cnt d-flex flex-wrap justify-content-center ">
+                                        <img src="assets/images/carousel/aquaman.jpg" alt="Aquaman">
+                                        <div class="carousel-movie-detail">
+                                            <div class="bottom-left title">AQUAMAN</div>
+                                            <div class="bottom-left tagline">Home Is Calling.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-inner-cnt d-flex flex-wrap justify-content-center ">
+                                        <img src="assets/images/carousel/hulk.jpg" alt="Aquaman">
+                                        <div class="carousel-movie-detail">
+                                            <div class="bottom-left title">THE INCREDIBLE HULK</div>
+                                            <div class="bottom-left tagline">You'll like him when he's angry.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-inner-cnt d-flex flex-wrap justify-content-center">
+                                        <img src="assets/images/carousel/capt.jpg" alt="Captain America">
+                                        <div class="carousel-movie-detail">
+                                            <div class="bottom-left title">CAPTAIN AMERICA: THE FIRST AVENGER</div>
+                                            <div class="bottom-left tagline">When patriots become heroes.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="carousel-inner-cnt d-flex flex-wrap justify-content-center">
+                                        <img src="assets/images/carousel/thor.jpg" alt="Thor">
+                                        <div class="carousel-movie-detail">
+                                            <div class="bottom-left title">THOR</div>
+                                            <div class="bottom-left tagline">Two worlds. One hero.</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Left and right controls -->
+                            <a class="carousel-control-prev" href="#landing-carousel" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#landing-carousel" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                            </a>
+                                
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <a id="slide-down-arrow" href="#page-content-section" title="Slide Down">
+                    <i class="fas fa-chevron-down"></i>
+                </a> -->
+
+            </div>    
+        </section>
+        <!-- Landing Section -->
+
+
+        <!-- Content Section -->
+        <section id="content-section">
+
+            <div id="content-nowshowing" class="bg-020d18 pt-1 pb-2">
+                <div class="container">
+                    <div class="row justify-content-center mb-4">
+                            <h4>Now Showing</h4>
+                    </div>
+
+                    <div class="row mb-3">
+                        <!-- Cinema 1 -->
+                        <div class="col-12 col-md-6 col-lg-3 justify-content-center d-flex mb-4">
+                            <div id="cinema1-card" class="card-wrapper">
+                                <input class="showing-movie-id" type="hidden" value="null">
+                                <span class="bottom-btn-padding"></span>
+                                <div class="top-right">
+                                    <img class="showing-content-rating" src="assets/icons/ic-rating-pg.png" height="20px" alt="content-rating">
+                                </div>
+                                <div class="lower-right">
+                                    <i class="fas fa-info-circle"></i> MORE DETAILS
+                                </div>
+                                <img src="assets/images/movies/joker.jpg" alt="Movie Banner" class="image showing-movie-banner">
+                                <div class="hover-overlay">
+                                        <div class="upper-left ">Cinema 1</div>
+                                    <div class="title showing-title">Movie Title</div>
+                                    <div class="lower-left">
+                                        <a href="movie-selected.html" class="reserve-btn" card-movie-id="null">
+                                            <i class="fas fa-ticket-alt"></i> BUY TICKET
+                                        </a>
+                                    </div>
+                                    <div class="lower-right">
+                                        <a id="modal-btn1-showing" class="showing-details-modal-btn" card-movie-id="null" style="color: #DD003F" href="#" role="button" data-toggle="modal" data-target="#gen-modal-showing">
+                                            <i class="fas fa-info-circle"></i> MORE DETAILS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cinema 2 -->
+                        <div class="col-12 col-md-6 col-lg-3 justify-content-center d-flex mb-4">
+                            <div id="cinema2-card" class="card-wrapper">
+                                <input class="showing-movie-id" type="hidden" value="null">
+                                <span class="bottom-btn-padding"></span>
+                                <div class="top-right">
+                                    <img class="showing-content-rating" src="assets/icons/ic-rating-g.png" height="20px" alt="content-rating">
+                                </div>
+                                <div class="lower-right">
+                                    <i class="fas fa-info-circle"></i> MORE DETAILS
+                                </div>
+                                <img src="assets/images/movies/one_piece.jpg" alt="Movie Banner" class="image showing-movie-banner">
+                                <div class="hover-overlay">
+                                        <div class="upper-left ">Cinema 2</div>
+                                    <div class="title showing-title">Movie Title</div>
+                                    <div class="lower-left">
+                                        <a href="movie-selected.html" class="reserve-btn" card-movie-id="null">
+                                            <i class="fas fa-ticket-alt"></i> BUY TICKET
+                                        </a>
+                                    </div>
+                                    <div class="lower-right">
+                                        <a id="modal-btn2-showing" class="showing-details-modal-btn" card-movie-id="null" style="color: #DD003F" href="#" role="button" data-toggle="modal" data-target="#gen-modal-showing">
+                                            <i class="fas fa-info-circle"></i> MORE DETAILS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cinema 3 -->
+                        <div class="col-12 col-md-6 col-lg-3 justify-content-center d-flex mb-4">
+                            <div id="cinema3-card" class="card-wrapper">
+                                <input class="showing-movie-id" type="hidden" value="null">
+                                <span class="bottom-btn-padding"></span>
+                                <div class="top-right">
+                                    <img class="showing-content-rating" src="assets/icons/ic-rating-g.png" height="20px" alt="content-rating">
+                                </div>
+                                <div class="lower-right">
+                                    <i class="fas fa-info-circle"></i> MORE DETAILS
+                                </div>
+                                <img src="assets/images/movies/one_piece.jpg" alt="Movie Banner" class="image showing-movie-banner">
+                                <div class="hover-overlay">
+                                        <div class="upper-left ">Cinema 2</div>
+                                    <div class="title showing-title">Movie Title</div>
+                                    <div class="lower-left">
+                                        <a href="movie-selected.html" class="reserve-btn" card-movie-id="null">
+                                            <i class="fas fa-ticket-alt"></i> BUY TICKET
+                                        </a>
+                                    </div>
+                                    <div class="lower-right">
+                                        <a id="modal-btn3-showing" class="showing-details-modal-btn" card-movie-id="null" style="color: #DD003F" href="#" role="button" data-toggle="modal" data-target="#gen-modal-showing">
+                                            <i class="fas fa-info-circle"></i> MORE DETAILS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Cinema 4 -->
+                        <div class="col-12 col-md-6 col-lg-3 justify-content-center d-flex mb-4">
+                            <div id="cinema4-card" class="card-wrapper">
+                                <input class="showing-movie-id" type="hidden" value="null">
+                                <span class="bottom-btn-padding"></span>
+                                <div class="top-right">
+                                    <img class="showing-content-rating" src="assets/icons/ic-rating-g.png" height="20px" alt="content-rating">
+                                </div>
+                                <div class="lower-right">
+                                    <i class="fas fa-info-circle"></i> MORE DETAILS
+                                </div>
+                                <img src="assets/images/movies/one_piece.jpg" alt="Movie Banner" class="image showing-movie-banner">
+                                <div class="hover-overlay">
+                                        <div class="upper-left ">Cinema 2</div>
+                                    <div class="title showing-title">Movie Title</div>
+                                    <div class="lower-left">
+                                        <a href="movie-selected.html" class="reserve-btn" card-movie-id="null">
+                                            <i class="fas fa-ticket-alt"></i> BUY TICKET
+                                        </a>
+                                    </div>
+                                    <div class="lower-right">
+                                        <a id="modal-btn4-showing" class="showing-details-modal-btn" card-movie-id="null" style="color: #DD003F" href="#" role="button" data-toggle="modal" data-target="#gen-modal-showing">
+                                            <i class="fas fa-info-circle"></i> MORE DETAILS
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Now Showing Modal -->
+                        <div id="gen-modal-showing" class="modal gen-modal">
+                            
+                            <input class="selected-nowshowing-movie-id" type="hidden" value="null">
+
+                            <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <!-- Modal Header -->
+                                    <div class="modal-header  bg-rgb9-25-43 text-abb7c4">
+                                        <h5 class="modal-title mx-auto"><i class="fas fa-film"></i>Selected Movie</h5>
+                                    </div>
+
+                                    <!-- Modal body -->
+                                    <div class="modal-body bg-rgb9-25-43 text-abb7c4">
+                                        <div class="row">
+                                            <div class="col-lg-5 justify-content-center d-flex mt-2 mt-lg-0 mb-3 mb-lg-0 py-3 px-0 my-auto">
+                                                <img class="modal-selected-movie-img" src="assets/images/movies/it_2.jpg" alt="Movie Banner">
+                                            </div>
+                                            <div class="detail-cntr col-lg-7 mt-3 my-auto py-1 px-4 px-lg-2">
+                                                <p><strong>Title:</strong> <span class="modal-selected-movie-title">Movie Title</span></p>
+                                                <p><strong>Genre:</strong> <span class="modal-selected-movie-genre">Genre</span></p>
+                                                <p><strong>Synopsis:</strong> 
+                                                    <span class="modal-selected-movie-synopsis">Synopsis</span>
+                                                </p>
+                                                <p><strong>Duration:</strong> <span class="modal-selected-movie-duration">Duration</span></p>
+                                                <p><strong>Show Date:</strong> <span class="modal-selected-movie-showdate">Show Date</span></p>
+                                                <p><strong>Cinema Number:</strong> <span class="modal-selected-movie-cinemanum">Cinema #</span></p>
+                                                <p><strong>Ticket Price:</strong> <span>&#8369;</span> <span class="modal-selected-movie-price">price</span></p>
+                                                <p class="rating"><strong>Rating:</strong>
+                                                    <!-- Stars Rating Here -->
+                                                </p>
+                                                <div class="content-rating-detail">
+                                                    <img class="modal-selected-movie-content-rating" src="assets/icons/ic-rating-pg.png" height="30px" alt="content-rating">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer bg-0f1c27 d-flex justify-content-around">
+                                        <a href="movie-selected.html" class="reserve-modal-btn" card-movie-id="null"><i class="fas fa-ticket-alt"></i> Buy Ticket</a>
+                                        <a href="#" class="close-modal-btn" data-dismiss="modal"><i class="fas fa-times"></i> Close</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- General Modal -->
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-comingsoon" class="bg-06121E pt-5">
+                <div class="container">
+                    <div class="row justify-content-center mb-4">
+                        <h4>Coming Soon</h4>
+                    </div>
+
+                    <div class="row mb-3 coming-soon-card-cntr">
+                        <!-- Coming Soon Movies -->
+                    </div>
+
+                    <!-- Now Coming Soon Modal -->
+                    <div id="gen-modal-comingsoon" class="modal gen-modal">
+                            
+                        <input class="selected-movie-id" type="hidden" value="null">
+
+                        <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg">
+                            <div class="modal-content">
+                                <!-- Modal Header -->
+                                <div class="modal-header  bg-rgb9-25-43 text-abb7c4">
+                                    <h5 class="modal-title mx-auto"><i class="fas fa-film"></i>Selected Movie</h5>
+                                </div>
+
+                                <!-- Modal body -->
+                                <div class="modal-body bg-rgb9-25-43 text-abb7c4">
+                                    <div class="row">
+                                        <div class="col-lg-5 justify-content-center d-flex mt-2 mt-lg-0 mb-3 mb-lg-0 py-3 px-0 my-auto">
+                                            <img class="modal-selected-movie-img" src="assets/images/movies/it_2.jpg" alt="Movie Banner">
+                                        </div>
+                                        <div class="detail-cntr col-lg-7 mt-3 my-auto py-1 px-4 px-lg-2">
+                                            <p><strong>Title:</strong> <span class="modal-selected-movie-title">Movie Title</span></p>
+                                            <p><strong>Genre:</strong> <span class="modal-selected-movie-genre">Genre</span></p>
+                                            <p><strong>Synopsis:</strong> 
+                                                <span class="modal-selected-movie-synopsis">Synopsis</span>
+                                            </p>
+                                            <p><strong>Duration:</strong> <span class="modal-selected-movie-duration">Duration</span></p>
+                                            <p><strong>Show Date:</strong> <span class="modal-selected-movie-showdate">Show Date</span></p>
+                                            <p><strong>Cinema Number:</strong> <span class="modal-selected-movie-cinemanum">Cinema #</span></p>
+                                            <p><strong>Ticket Price:</strong> <span>&#8369;</span> <span class="modal-selected-movie-price">price</span></p>
+                                            <p class="rating"><strong>Rating:</strong>
+                                                <!-- Stars Rating Here -->
+                                            </p>
+                                            <div class="content-rating-detail">
+                                                <img class="modal-selected-movie-content-rating" src="assets/icons/ic-rating-pg.png" height="30px" alt="content-rating">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Modal footer -->
+                                <div class="modal-footer bg-0f1c27 d-flex justify-content-around">
+                                    <a href="movie-selected.html" class="reserve-modal-btn"><i class="fas fa-ticket-alt"></i> Buy Ticket</a>
+                                    <a href="#" class="close-modal-btn" data-dismiss="modal"><i class="fas fa-times"></i> Close</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- General Modal -->
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Content Section -->
+
+
+        <!-- Footer -->
+        <section id="footer-section">
+            <footer >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-lg-4 py-lg-4 mt-5 mt-md-2 px-5 ml-3 ml-lg-0">
+                            <div class="row">
+                                <img src="assets/icons/logo-a.png" style="height: 50px" alt="Brand Logo">
+                            </div>
+                            <div class="row">
+                                <address class="text-abb7c4 pt-3">
+                                    <span>Cebu IT Park Business Center</span> <br>
+                                    <span>S-04 G/F Skyrise 4 Bldg.</span> <br>
+                                    <span>Cebu IT Park Lahug, Cebu City 6000</span>
+                                </address>
+                            </div>
+                        </div>
+                        <div class="col-sm-12 col-lg-4 py-lg-4 mt-5 mt-md-2 px-5 text-abb7c4">
+                            <h5 class="mb-4"><strong>Legal</strong></h5>
+                            <ul class="footer-links-cntr">
+                                <li><a href="javascript:void(0)">Terms and Condition</a></li>
+                                <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                                <li><a href="javascript:void(0)">Security</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-12 col-lg-4 py-lg-4 mt-5 mt-md-2 px-5 text-abb7c4 footer-sm-icon">
+                            <a href="javascript:void(0)"><i class="fab fa-facebook-f fa-2x mr-3"></i></a>
+                            <a href="javascript:void(0)"><i class="fab fa-twitter fa-2x mx-3"></i></a>
+                            <a href="javascript:void(0)"><i class="fab fa-google-plus-g fa-2x mx-3"></i></a>
+
+                            <div class="footer-email-box mt-4">
+                                <input type="text" class="email-box__input mb-2" placeholder="Email Address" />
+                                <a href="javascript:void(0)" class="email-box__button"><i class="far fa-paper-plane"></i></a>
+                                <p>SUBSCRIBE NOW</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="copy-right-cntr bg-0f1c27">
+                    <div class="container">
+                        <div class="row justify-content-center py-3 text-abb7c4">
+                            <small>Copyright &copy; Cejudo and Tapang  </small>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </section>
+        <!-- Footer -->
+
+        <!-- Scripts -->
+        <script src="assets/scripts/jquery-3.3.1.min.js"></script>
+        <script src="assets/bootstrap/js/popper.min.js"></script>
+        <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- User Defined JS -->
+        <script src="assets/scripts/helper.js"></script>
+        <script src="assets/scripts/index.js"></script>
+
+        <!-- Scripts -->
+
+    </body>
+</html>

@@ -1,0 +1,62 @@
+body {
+    background-color: #020d18;
+
+}
+
+#content-section-a {
+    height: 20vh;
+    background-color: #0C2238;
+}
+
+#content-section-b {
+    background-color: #0C2238;
+}
+
+#confirmation-detail-cntr {
+    width: 100%;
+}
+
+#confirmation-detail-cntr .divider {
+    display: none;
+}
+
+@media only screen and (max-width: 991px) {
+    #confirmation-detail-cntr .movie-banner-img img {
+        width: 75%;
+    }
+
+    #confirmation-detail-cntr .divider {
+        display: block;
+    }
+
+    #confirmation-detail-cntr .movie-details-cntr {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+@media only screen and (max-width: 420px) {
+    #confirmation-detail-cntr .movie-banner-img img {
+        width: 90%;
+    }
+
+    #confirmation-detail-cntr .movie-details-cntr {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #confirmation-detail-cntr .movie-banner-img img {
+        width: 100%;
+    }
+
+    #confirmation-detail-cntr .movie-details-cntr {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

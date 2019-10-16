@@ -1,0 +1,108 @@
+body {
+    background-color: #020D18;
+}
+
+#landing-section {
+    background-image: url("../images/background.jpg");
+    width: 100%;
+    height: 90vh;
+    position: absolute;
+}
+
+#landing-section .landing-content {
+    width: 95%;
+}
+
+#landing-section .landing-content .carousel-inner {
+    width: 100%;
+    height: 70vh;
+}
+
+#landing-section .landing-content .carousel-inner .carousel-inner-cnt {
+    position: relative;
+    text-align: center;
+    color: white;
+
+}
+
+#landing-section .landing-content .carousel-inner .title {
+    position: absolute;
+    left: 50px;
+    top: 30px;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 42px;
+    font-family: Dosis, Helvetica, Arial, sans-serif;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#landing-section .landing-content .carousel-inner .tagline {
+    position: absolute;
+    left: 50px;
+    top: 80px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#landing-section  .carousel img{
+    object-fit: cover;
+    background-color:black;
+    opacity:0.9;
+
+}
+
+#landing-section .carousel-indicators li {
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+}
+
+#content-nowshowing {
+    margin-top: 95vh;
+}
+
+#content-section h4{
+    color: #abb7c4;
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: Dosis, Helvetica, Arial, sans-serif;
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                0px 8px 13px rgba(0,0,0,0.1),
+                0px 18px 23px rgba(0,0,0,0.1);
+}
+
+#content-comingsoon .comingsoon-date {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* Hides Content Before Fetching Data */
+#content-nowshowing, #content-comingsoon {
+    display: none;
+}
+
+/* Temp Content Filler */
+#content-section {
+    height: 100vh;
+}
+/* Hide Content Before Fetching Data */
