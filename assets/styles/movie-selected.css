@@ -23,16 +23,23 @@ body {
 }
 
 #schedule-date-cntr #schedule-date-picker,
+<<<<<<< HEAD
 #cinema-selector-cntr #input-cinema,
 #schedule-selector-cntr #input-schedule-dropdown {
+=======
+#cinema-selector-cntr #input-cinema{
+>>>>>>> 038cd43764a3b670070cc304a08d0eea2c3dbd6c
     background-color:#233A50;
     color: #abb7c4;
 }
 
+<<<<<<< HEAD
 .no-schedule-alert {
     display: none;
 }
 
+=======
+>>>>>>> 038cd43764a3b670070cc304a08d0eea2c3dbd6c
 /* #schedule-date-cntr .input-group-prepend {
     background-color:#233A50 !important;
     color: #abb7c4 !important;

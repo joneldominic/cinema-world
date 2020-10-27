@@ -20,8 +20,6 @@
         <!-- Font Awesome -->
         <script defer src="assets/fonts/fontawesome.js"></script>    
 
-        <!-- Data -->
-        <script src="data/movies.js"></script>
         
     </head>
     <body>
@@ -130,7 +128,7 @@
                                                 <span class="label top-label">8</span>
                                             </div>
                                             <div id="seats-row-i" class="seat-row mx-auto text-center">
-                                                <img class="seat available" title="I1" src="assets/images/seats/available.png" alt="Seat">
+                                                <img class="seat " title="I1" src="assets/images/seats/available.png" alt="Seat">
                                                 <img class="seat available" title="I2" src="assets/images/seats/available.png" alt="Seat">
                                                 <img class="seat available" title="I3" src="assets/images/seats/available.png" alt="Seat">
                                                 <img class="seat available" title="I4" src="assets/images/seats/available.png" alt="Seat">
@@ -237,18 +235,18 @@
                                 </div>
                             </div>
                             <div class="card-footer card-seatplan">
-                                <div class="row justify-content-between px-md-5 px-0 inner-cntr">
-                                        <div id="resrvation-details">
-                                            <span class="movie-title">Movie Title</span> | <span class="cinema-num">Cinema #</span> | <span class="show-date">Show Date</span> | Reserved Seats <span id="selected-seat-badge" class="badge">0</span>
-                                        </div>
-                                        <div class="d-flex justify-content-between">
-                                            <a href="movie-selected.html" class="btn btn-link btn-sm ml-3 ml-lg-0"><i class="fas fa-chevron-left"></i> Back</a>
-                                            <a id="btn-proceed" href="javascript:void(0)" class="btn btn-link btn-sm ml-3 ml-lg-0">Proceed <i class="fas fa-chevron-right"></i></a>
-                                        </div>
+                                <div class="row justify-content-between px-md-5 px-0">
+                                    <a href="movie-selected.html" class="btn btn-link btn-sm ml-3 ml-lg-0"><i class="fas fa-chevron-left"></i> Back</a>
+                                    <div id="resrvation-details">
+                                        Movie Title | Cinema # | Show Date | Reserved Seats <span id="selected-seat-badge" class="badge">0</span>
+                                    </div>
+                                    <a href="confirmation.html" class="btn btn-link btn-sm ml-3 ml-lg-0">Proceed <i class="fas fa-chevron-right"></i></a>
                                 </div>
                             </div>
                         </div>
+
                     </div>
+
                 </div>
             </div>
         </section>
@@ -313,7 +311,6 @@
 
         <!-- User Defined JS -->
         <script src="assets/scripts/helper.js"></script>
-        <script src="assets/scripts/seatplan.js"></script>
 
         <!-- Scripts -->
 

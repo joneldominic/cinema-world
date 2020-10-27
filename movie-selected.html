@@ -12,6 +12,8 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="assets/bootstrap/bootstrap-datepicker/css/bootstrap-datepicker.css">
 
         <!-- User Defined CSS -->
         <link rel="stylesheet" href="assets/styles/helper.css">
@@ -20,8 +22,6 @@
         <!-- Font Awesome -->
         <script defer src="assets/fonts/fontawesome.js"></script>    
 
-        <!-- Data -->
-        <script src="data/movies.js"></script>
         
     </head>
     <body>
@@ -101,46 +101,66 @@
 
                         <div id="movie-detail-container" class="card bg-rgb9-25-43 text-abb7c4 mb-5">
                             <div class="card-header text-center">
-                                <h4 class="movie-title">Movie Title</h4> 
+                                <h4>Movie Title</h4> 
                                 <div class="content-rating-detail">
-                                    <img class="content-rating" src="assets/icons/ic-rating-pg.png" height="30px" alt="content-rating">
+                                    <img src="assets/icons/ic-rating-pg.png" height="30px" alt="content-rating">
                                 </div> 
                             </div>
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-5 mb-4 mb-md-0">
                                         <div class="movie-banner-img row justify-content-center">
-                                            <img class="movie-image-banner" src="assets/images/movies/one_piece.jpg" alt="Movie Banner">
+                                            <img src="assets/images/movies/one_piece.jpg" alt="Movie Banner">
                                         </div>
                                     </div>
                                     <div class="col-md-7">
-                                        <p><strong>Genre:</strong> <span class="movie-genre">Movie Genre</span></p>
+                                        <p><strong>Genre:</strong> Coming of Age</p>
                                         <p><strong>Synopsis:</strong> 
-                                            <span class="movie-synopsis">Synopsis</span>
+                                            A public hospital serves as a witness to a young boy’s 
+                                            rite of passage when he is stuck to take care of his ailing father. 
+                                            Caught in a place where life itself is in limbo, the boy treats the
+                                                hospital grounds as his playground, not knowing that it will be his source of liberation in the end.
                                         </p>
-                                        <p><strong>Duration:</strong> <span class="movie-duration">Duration</span></p>
-                                        <p><strong>Ticket Price:</strong> <span>&#8369;</span> <span class="ticket-price">Price</span></p>
+                                        <p><strong>Duration:</strong> 1 hr, 59 mins</p>
+                                        <p><strong>Ticket Price:</strong> <span>&#8369;</span> 250.00</p>
                                         <p class="rating"><strong>Rating:</strong>
-                                            <!-- Stars Rating Here -->
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star checked"></span>
+                                            <span class="fa fa-star"></span>
+                                            <span class="fa fa-star"></span>
                                         </p>
 
-                                        <!-- Schedule -->
-                                        <div id="schedule-selector-cntr" class="input-group mb-3 form-inline">
+                                        <!-- Date Picker -->
+                                        <div id="schedule-date-cntr" class="input-group date form-inline" data-provide="datepicker">
+                                            <div class="input-group mb-3">
+                                                <div class="input-group-prepend">
+                                                    <label for="schedule-date-picker" class="input-group-text"><strong>Show Date:</strong></label>
+                                                </div>
+                                                <input id="schedule-date-picker" type="text" class="form-control" value="00-0-0000">
+                                                <div class="input-group-append">
+                                                    <button class="btn btn-outline-secondary"><i class="fas fa-calendar-alt"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Date Picker -->
+
+                                        <!-- Cinema -->
+                                        <div id="cinema-selector-cntr" class="input-group mb-3 form-inline">
                                             <div class="input-group">
                                                 <div class="input-group-prepend">
-                                                    <label for="input-schedule-dropdown" class="input-group-text"><strong>Show Date</strong></label>
+                                                    <label for="inputCinema" class="input-group-text"><strong>Cinema</strong></label>
                                                 </div>
-                                                <select class="custom-select" id="input-schedule-dropdown">
-                                                    <option value="0" selected>Choose...</option>
-                                                    <!-- <option value="Date">Date Here</option> -->
+                                                <select class="custom-select" id="input-cinema">
+                                                    <option selected>Choose...</option>
+                                                    <option value="1">Cinema 1</option>
+                                                    <option value="2">Cinema 2</option>
+                                                    <option value="3">Cinema 3</option>
+                                                    <option value="4">Cinema 4</option>
                                                 </select>
                                             </div>
                                         </div>
-                                        <!-- Date -->
-
-                                        <div class="no-schedule-alert alert alert-danger alert-dismissible" role="alert">
-                                            Please Select Schedule.
-                                        </div>
+                                        <!-- Cinema -->
 
                                     </div>
                                 </div>
@@ -148,7 +168,7 @@
                             <div class="card-footer card-selected-movie">
                                 <div class="row justify-content-between px-md-5 px-0">
                                     <a href="reservation.html" class="btn btn-link btn-sm ml-3 ml-lg-0"><i class="fas fa-chevron-left"></i> Back</a>
-                                    <a id="btn-proceed" href="javascript:void(0)" class="btn btn-link btn-sm ml-3 ml-lg-0">Proceed <i class="fas fa-chevron-right"></i></a>
+                                    <a href="seatplan.html" class="btn btn-link btn-sm ml-3 ml-lg-0">Proceed <i class="fas fa-chevron-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -211,11 +231,13 @@
         </section>
         <!-- Footer -->
 
-
+       
         <!-- Scripts -->
         <script src="assets/scripts/jquery-3.3.1.min.js"></script>
         <script src="assets/bootstrap/js/popper.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+        <script src="assets/bootstrap/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
 
         <!-- User Defined JS -->
         <script src="assets/scripts/helper.js"></script>

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // Landing Section Display Handler
+=======
+// Lading Section Display Handler
+>>>>>>> 038cd43764a3b670070cc304a08d0eea2c3dbd6c
 $(window).resize(function() {
     if ($(window).width() < 992) {
         $("#landing-section  .carousel img").each(function() {
@@ -26,6 +30,7 @@ $(window).resize(function() {
 });
 
 
+<<<<<<< HEAD
 // Content Initialization
 $(document).ready(function(){
 
@@ -52,12 +57,27 @@ $(document).ready(function(){
         reserveBtnClickEventHandler($(this).attr("card-movie-id"))
     })
     
+=======
+
+
+// Content Initialization
+$(document).ready(function(){
+    populateMovieCards();
+>>>>>>> 038cd43764a3b670070cc304a08d0eea2c3dbd6c
 }); 
 // Content Initialization
 
 
 
+<<<<<<< HEAD
 function modalClickEventHandler(showingModalID, selectedMovieID){
+=======
+
+// Events Assignment
+$(".showing-details-modal-btn").click(function(){
+
+    var selectedMovieID = $(this).attr("card-movie-id");
+>>>>>>> 038cd43764a3b670070cc304a08d0eea2c3dbd6c
 
     var movie = movies.find(function(m) {
         if(m.id == selectedMovieID) {
@@ -65,6 +85,7 @@ function modalClickEventHandler(showingModalID, selectedMovieID){
         }
     });
 
+<<<<<<< HEAD
     $(`${showingModalID} .modal-selected-movie-img`).attr("src", movie.imgUrl);
     $(`${showingModalID} .modal-selected-movie-title`).html(movie.title);
     $(`${showingModalID} .modal-selected-movie-genre`).html(movie.genre);
@@ -88,6 +109,23 @@ function modalClickEventHandler(showingModalID, selectedMovieID){
     // Rating
     var ratingStarCntr = $(`${showingModalID} .rating`);
     $(`${showingModalID} .rating>svg`).remove();
+=======
+    console.log(movie);
+
+    // Populating Modal
+    var showingModalID = "#gen-modal-showing";
+    $(showingModalID + " .modal-selected-movie-img").attr("src", movie.imgUrl);
+    $(showingModalID + " .modal-selected-movie-title").html(movie.title);
+    $(showingModalID + " .modal-selected-movie-genre").html(movie.genre);
+    $(showingModalID + " .modal-selected-movie-synopsis").html(movie.synopsis);
+    // Duration
+    // Show Date
+    // Cinema Number
+    // Ticket Price
+    // Rating
+    var ratingStarCntr = $("#gen-modal-showing .rating");
+    $("#gen-modal-showing .rating>svg").remove();
+>>>>>>> 038cd43764a3b670070cc304a08d0eea2c3dbd6c
     for(var i=0; i<5; i++) {
         if(i<movie.rating) {
             $(ratingStarCntr).append('<span class="fa fa-star checked"></span>');
@@ -96,7 +134,16 @@ function modalClickEventHandler(showingModalID, selectedMovieID){
         }
     }
     $(showingModalID + " .modal-selected-movie-content-rating").attr("src", "assets/icons/ic-rating-"+movie.contentRating+".png");
+<<<<<<< HEAD
 }
+=======
+
+
+});
+// Events Assignment
+
+
+>>>>>>> 038cd43764a3b670070cc304a08d0eea2c3dbd6c
 
 
 
@@ -142,12 +189,16 @@ function populateMovieCards() {
         }
     })
 
+<<<<<<< HEAD
     // Populate Now Showing
+=======
+>>>>>>> 038cd43764a3b670070cc304a08d0eea2c3dbd6c
     setShowingMovieCard(showing[0], 1);
     setShowingMovieCard(showing[1], 2);
     setShowingMovieCard(showing[2], 3);
     setShowingMovieCard(showing[3], 4);
 
+<<<<<<< HEAD
     // Populate Coming Soon
     comingsoon.forEach(function(c_movie, cm_index) {
         genComingSoonCard(c_movie)
@@ -217,3 +268,33 @@ function genComingSoonCard(movie) {
 function reserveBtnClickEventHandler(movieID) {
     localStorage.setItem("selected-movie-id",movieID);
 }
+=======
+    // Show Data After Fetch
+    $("#content-nowshowing").show();
+    // Removes Content Filler
+    $("#content-section").css("height", "auto");
+
+
+
+    // Temp
+    $("#content-comingsoon").show();
+    // Try implementing coming soon in another method
+    console.log(comingsoon);
+
+}
+
+
+function setShowingMovieCard(movie, cinemaNum) {
+
+    var cardID = "#cinema"+cinemaNum+"-card"; 
+    
+    // Seat Cinema Card Details
+    $(cardID + " .showing-movie-id").val(movie.id);
+    $(cardID + " .showing-details-modal-btn").attr("card-movie-id", movie.id);
+    $(cardID + " .showing-content-rating").attr("src", "assets/icons/ic-rating-"+movie.contentRating+".png");
+    $(cardID + " .showing-movie-banner").attr("src", movie.imgUrl);
+    $(cardID + " .showing-title").html(movie.title);
+}
+
+
+>>>>>>> 038cd43764a3b670070cc304a08d0eea2c3dbd6c

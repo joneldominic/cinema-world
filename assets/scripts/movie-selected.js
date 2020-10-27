@@ -1,4 +1,5 @@
 $(document).ready(function(){
+<<<<<<< HEAD
 
     // Unset unnecessary item in local storages
     localStorage.removeItem("selected-movie-cinema");
@@ -85,3 +86,18 @@ function btnProceedEventHandler() {
         });
     }
 }
+=======
+    $("#schedule-date-picker").val(getDateToday());
+    $('#schedule-date-cntr').datepicker({
+        format: 'mm/dd/yyyy', 
+        autoclose: true, 
+        startDate: '10/2/2019', 
+        endDate: '10/22/2019'
+    });
+    
+    // $('#schedule-date-cntr').datepicker().startDate('10/2/2019');
+    // $('#schedule-date-cntr').datepicker().datesDisable('104/2019');
+
+
+}); 
+>>>>>>> 038cd43764a3b670070cc304a08d0eea2c3dbd6c

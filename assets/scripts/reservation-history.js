@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Unset unnecessary item in local storages
 localStorage.removeItem("selected-movie-id");
 localStorage.removeItem("selected-movie-cinema");
@@ -87,3 +88,8 @@ $("#confirm-cancellation-btn").click(function(){
 onDelete = (index) => {
     $("#confirm-cancellation-btn").attr("reservation-id", index);
 }
+=======
+$(".cancel-reserve-btn").click(function(){
+    alert("Prompt to Confirm Cancellation Here...");
+});
+>>>>>>> 038cd43764a3b670070cc304a08d0eea2c3dbd6c

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 $(document).ready(function(){
 
     validateSelectedMovie(function(movieDetail) {
@@ -106,3 +107,8 @@ function saveData() {
     }, 1100);
 
 } 
+=======
+$("#reservation-confirm-btn").click(function(){
+    alert("Success Message Here...");
+});
+>>>>>>> 038cd43764a3b670070cc304a08d0eea2c3dbd6c

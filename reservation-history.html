@@ -20,8 +20,6 @@
         <!-- Font Awesome -->
         <script defer src="assets/fonts/fontawesome.js"></script>    
 
-        <!-- Data -->
-        <script src="data/movies.js"></script>
         
     </head>
     <body>
@@ -106,7 +104,40 @@
                                                         <th>Option</th>
                                                     </tr>
                                                 </thead>
-                                                <tbody id="reservation-history-data">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>John Wick</td>
+                                                        <td>Oct 13, 2019</td>
+                                                        <td>Cinema 2</td>
+                                                        <td><span>&#8369;</span> 300.00</td>
+                                                        <td>2</td>
+                                                        <td><span>&#8369;</span> 600.00</td>
+                                                        <td>
+                                                            <button type="button" class="cancel-reserve-btn btn btn-outline-danger btn-sm">Cancel</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Aquaman</td>
+                                                        <td>Oct 15, 2019</td>
+                                                        <td>Cinema 1</td>
+                                                        <td><span>&#8369;</span> 250.00</td>
+                                                        <td>4</td>
+                                                        <td><span>&#8369;</span> 1000.00</td>
+                                                        <td>
+                                                            <button type="button" class="cancel-reserve-btn btn btn-outline-danger btn-sm">Cancel</button>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>John Wick</td>
+                                                        <td>Oct 13, 2019</td>
+                                                        <td>Cinema 2</td>
+                                                        <td><span>&#8369;</span> 300.00</td>
+                                                        <td>2</td>
+                                                        <td><span>&#8369;</span> 600.00</td>
+                                                        <td>
+                                                            <button type="button" class="cancel-reserve-btn btn btn-outline-danger btn-sm">Cancel</button>
+                                                        </td>
+                                                    </tr>
                                                 </tbody>
                                             </table>
                                         </div>
@@ -121,28 +152,6 @@
             </div>
         </section>
         <!-- Content Section B-->
-
-        <!-- The Modal -->
-        <div class="modal fade " id="confirm-delete-modal">
-            <div class="modal-dialog modal-sm modal-dialog-centered">
-                <div class="modal-content bg-rgb9-25-43 text-abb7c4">
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title">Warning!</h4>
-                    </div>
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        Reservation will be cancelled.
-                    </div>
-                    
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-secondary btn-sm" data-dismiss="modal">Cancel</button>
-                        <button id="confirm-cancellation-btn" type="button" class="btn btn-outline-danger btn-sm" reservation-id="null" data-dismiss="modal">Confirm</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
         <!-- Footer -->
         <section id="footer-section">
@@ -200,7 +209,6 @@
         <script src="assets/bootstrap/js/popper.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
-        <script src="assets/scripts/jquery.toast.js"></script>
 
         <!-- User Defined JS -->
         <script src="assets/scripts/helper.js"></script>

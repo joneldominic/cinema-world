@@ -21,9 +21,7 @@
         <!-- Font Awesome -->
         <script defer src="assets/fonts/fontawesome.js"></script>    
 
-        <!-- Data -->
-        <script src="data/movies.js"></script>
-
+        
     </head>
     <body>
 
@@ -100,7 +98,7 @@
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-10">
 
-                        <div id="confirmation-detail-cntr" class="card bg-rgb9-25-43 text-abb7c4 mb-5 w-100 mx-auto">
+                        <div id="confirmation-detail-cntr" class="card bg-rgb9-25-43 text-abb7c4 mb-5 w-75 mx-auto">
                             <div class="card-header text-center">
                                 <h4>Reservation Summary</h4> 
                             </div>
@@ -110,19 +108,19 @@
                                         <div class="row">
                                             <div class="col-lg-5">
                                                 <div class="movie-banner-img row justify-content-center">
-                                                    <img id="movie-image" src="assets/images/movies/one_piece.jpg" alt="Movie Banner">
+                                                    <img src="assets/images/movies/one_piece.jpg" alt="Movie Banner">
                                                 </div>
                                             </div>
                                             <div class="col-lg-7 movie-details-cntr">
                                                 <hr class="divider">
-                                                <p><strong>Movie Title:</strong> <span id="movie-title">Movie Title</span></p>
-                                                <p><strong>Show Date:</strong> <span id="show-date">Show Date</span></p>
-                                                <p><strong>Cinema:</strong> <span id="cinema-num">Cinema #</span></p>
-                                                <p><strong>Ticket Price:</strong> <span>&#8369;</span> <span id="ticket-price">Price</span></p>
-                                                <p><strong>Reserved Seat/s:</strong> <span id="reserved-seats">Seats</span></p>
-                                                <p><strong>Seat Count:</strong> <span id="seat-count">Count</span></p>
+                                                <p><strong>Movie Title:</strong> Movie Title</p>
+                                                <p><strong>Show Date:</strong> Oct 13, 2019</p>
+                                                <p><strong>Cinema:</strong> Cinema 1</p>
+                                                <p><strong>Ticket Price:</strong> <span>&#8369;</span> 250.00</p>
+                                                <p><strong>Reserved Seat/s:</strong> A1, A2</p>
+                                                <p><strong>Seat Count:</strong> 2</p>
                                                 <hr class="" style="border-color: #abb7c4;">
-                                                <p><strong>Total Amount:</strong> <span>&#8369;</span> <span id="total-amount">Total Amount</span></p>
+                                                <p><strong>Total Amount:</strong> <span>&#8369;</span> 500.00</p>
                                             </div>
                                         </div>
                                     </div>
@@ -131,7 +129,7 @@
                             <div class="card-footer card-confirmation">
                                 <div class="row justify-content-between px-md-5 px-0">
                                     <a href="seatplan.html" class="btn btn-link btn-sm ml-3 ml-lg-0"><i class="fas fa-chevron-left"></i> Back</a>
-                                    <a id="reservation-confirm-btn" href="javascript:void(0)" class="btn btn-link btn-sm ml-3 ml-lg-0">Confirm <i class="fas fa-chevron-right"></i></a>
+                                    <a id="reservation-confirm-btn" href="#" class="btn btn-link btn-sm ml-3 ml-lg-0">Confirm <i class="fas fa-chevron-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -142,7 +140,6 @@
             </div>
         </section>
         <!-- Content Section B-->
-
 
         <!-- Footer -->
         <section id="footer-section">
@@ -199,8 +196,6 @@
         <script src="assets/scripts/jquery-3.3.1.min.js"></script>
         <script src="assets/bootstrap/js/popper.min.js"></script>
         <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-
-        <script src="assets/scripts/jquery.toast.js"></script>
 
 
         <!-- User Defined JS -->

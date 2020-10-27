@@ -35,7 +35,11 @@ body {
 
 /* Shake Hover Effect */
 #seats-cntr img.available:hover{
+<<<<<<< HEAD
     animation: shake 2.5s;
+=======
+    animation: shake 0.5s;
+>>>>>>> 038cd43764a3b670070cc304a08d0eea2c3dbd6c
     animation-iteration-count: infinite;
     cursor: pointer;
 }
@@ -139,6 +143,7 @@ body {
 #selected-seat-badge {
     background: #DD003F;
     padding: 4px;
+<<<<<<< HEAD
 }
 
 
@@ -151,3 +156,6 @@ body {
     margin-right: auto;
     text-align: center;
 }
+=======
+}
+>>>>>>> 038cd43764a3b670070cc304a08d0eea2c3dbd6c
